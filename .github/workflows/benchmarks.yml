@@ -1,0 +1,29 @@
+name: Benchmarks CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  benchmark-suite:
+    name: Run F-AGI Empirical Benchmarks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Execute Full Benchmark Suite
+        run: |
+          python3 runner.py
+
+      - name: Verify Results Integrity
+        run: |
+          test -f results.json
+          python3 -c "import json; data=json.load(open('results.json')); assert data['status'] == 'ALL_BENCHMARKS_PASSED'"
