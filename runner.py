@@ -28,12 +28,17 @@ BENCHMARKS = [
     ("test_recursive_self_improvement", "10. Recursive Self-Improvement via AST Synthesis"),
     ("test_counterfactual_causality", "11. Counterfactual Reasoning (Pearl Causality L3)"),
     ("test_dynamic_ast_synthesis", "12. Dynamic Runtime Kernel AST Injection"),
-    ("test_adversarial_robustness", "13. Kernel Epistemic Isolation against Adversarial Injections")
+    ("test_adversarial_robustness", "13. Kernel Epistemic Isolation against Adversarial Injections"),
+    ("test_v2_distributed_consensus", "14. Distributed Epistemic Consensus across 10+ Nodes"),
+    ("test_v2_multimodal_grounding", "15. Cross-Modal 512-Dim Latent Fusion & Semantic Alignment"),
+    ("test_v2_cross_modal_counterfactuals", "16. Multi-Modal Counterfactual Reasoning (Pearl L3)"),
+    ("test_v2_distributed_scaling", "17. Distributed Horizontal Scalability & Parallel Speedup"),
+    ("test_v2_immutable_audit", "18. Cryptographic Immutable Audit Trail & Tamper Resistance"),
 ]
 
 def run_all_benchmarks():
     print("=" * 70)
-    print("🧠 AGI EMPIRICAL BENCHMARK SUITE (F-AGI / SEAN)")
+    print("🧠 AGI EMPIRICAL BENCHMARK SUITE v2.0 (F-AGI / SEAN)")
     print(f"Timestamp: {datetime.now(timezone.utc).isoformat()}")
     print(f"Python Version: {sys.version.split()[0]}")
     print("=" * 70)
@@ -66,7 +71,13 @@ def run_all_benchmarks():
             elif hasattr(mod, "run_benchmark"):
                 benchmark_data = mod.run_benchmark()
             else:
-                benchmark_data = {"status": "executed"}
+                test_funcs = [getattr(mod, f) for f in dir(mod) if f.startswith("test_") and callable(getattr(mod, f))]
+                if test_funcs:
+                    for tf in test_funcs:
+                        tf()
+                    benchmark_data = {"status": "executed", "tests_run": len(test_funcs)}
+                else:
+                    benchmark_data = {"status": "executed"}
 
             elapsed_ms = (time.perf_counter() - t0) * 1000
             print(f"  ✓ PASSED ({elapsed_ms:.2f} ms)")

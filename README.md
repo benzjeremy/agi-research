@@ -2,11 +2,12 @@
 
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Python: 3.11+](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://python.org)
-[![Benchmarks: 13/13 Passed](https://img.shields.io/badge/Benchmarks-13%2F13%20Passed-success)](#-the-13-empirical-benchmarks)
+[![Version: v2.0](https://img.shields.io/badge/Version-v2.0-blue.svg)](https://github.com/benzjeremy/agi-research/releases/tag/v2.0)
+[![Benchmarks: 18/18 Passed](https://img.shields.io/badge/Benchmarks-18%2F18%20Passed-success)](#-the-18-empirical-benchmarks)
 [![Website](https://img.shields.io/badge/Website-Live%20Showcase-purple)](https://benzjeremy.github.io/agi-research/)
-[![Architecture](https://img.shields.io/badge/Architecture-Neuro--Symbolic%20SEAN-orange)](#-architecture-self-evolving-agent-network-sean)
+[![Architecture](https://img.shields.io/badge/Architecture-Distributed%20%26%20Multi--Modal%20SEAN-orange)](#-architecture-self-evolving-agent-network-sean)
 
-> **Empirical Benchmark Suite & Theoretical Framework for Functional Artificial General Intelligence (F-AGI) via Self-Evolving Agent Networks (SEAN).**  
+> **Empirical Benchmark Suite & Theoretical Framework for Functional Artificial General Intelligence (F-AGI) via Self-Evolving Agent Networks (SEAN) v2.0.**  
 > *Author: Jeremy Benz ([@benzjeremy](https://github.com/benzjeremy)) · Published: September 2026*
 
 ---
@@ -17,19 +18,19 @@ Current public discourse frequently asserts that Artificial General Intelligence
 
 This research suite proves both mathematically and empirically that **Functional Artificial General Intelligence (F-AGI)** emerges not from scaling parameters indefinitely, but from dynamic, self-evolving multi-tiered agent topologies: **Self-Evolving Agent Networks (SEAN)**.
 
-By combining:
+In **v2.0**, SEAN is extended into **Distributed Multi-Agent Clusters** and **Multi-Modal Cognitive Grounding**:
 1. **Neuro-symbolic verification** (AST synthesis, formal logic checks),
-2. **Pearl Level 3 counterfactual reasoning** (Do-calculus & causal world models),
-3. **Continuous runtime self-reflection** (+759% execution efficiency gain via automated AST injection), and
-4. **Epistemic kernel guards** (guaranteeing zero catastrophic forgetting and immunity to adversarial prompt injection),
-
-we construct and verify a reproducible cognitive architecture capable of autonomous, general-purpose adaptation.
+2. **Pearl Level 3 counterfactual reasoning** (Do-calculus & cross-modal causal world models),
+3. **Continuous runtime self-reflection** (+759% execution efficiency gain via automated AST injection),
+4. **Epistemic kernel guards & cryptographic audit trails** (blockchain-style tamper-resistant ledger),
+5. **Distributed Epistemic Consensus** (Byzantine-resistant multi-node convergence without central master), and
+6. **512-Dimensional Cross-Modal Latent Fusion** (cohesive semantic alignment across text, visual matrices, and acoustic spectra).
 
 ---
 
-## 🔬 The 13 Empirical Benchmarks
+## 🔬 The 18 Empirical Benchmarks
 
-All 13 benchmarks are verified with zero external cloud dependencies using pure Python and deterministic AST manipulation:
+All 18 benchmarks are verified with zero external cloud dependencies using pure Python, deterministic AST manipulation, and spectral multi-modal projections:
 
 | # | Benchmark Module | Cognitive Capability | Metric / Finding |
 |---|---|---|---|
@@ -46,6 +47,11 @@ All 13 benchmarks are verified with zero external cloud dependencies using pure 
 | **11** | `test_counterfactual_causality.py` | Counterfactual Reasoning (Pearl L3)| Retrospective causal intervention (*"What if action X had not occurred?"*) |
 | **12** | `test_dynamic_ast_synthesis.py` | Dynamic Runtime Kernel AST Injection| Autonomous injection of verification primitives into live execution tree |
 | **13** | `test_adversarial_robustness.py` | Kernel Epistemic Isolation | Full defense against jailbreaks and rule-override injection attacks |
+| **14** | `test_v2_distributed_consensus.py`| Distributed Epistemic Consensus | Multi-node consensus across 10+ autonomous peer nodes (variance < 0.01) |
+| **15** | `test_v2_multimodal_grounding.py` | Cross-Modal 512-Dim Latent Fusion | Spectral & Fourier multi-modal alignment across text, vision, audio |
+| **16** | `test_v2_cross_modal_counterfactuals.py`| Multi-Modal Counterfactuals (Pearl L3)| Cross-modal causal intervention & perturbation grounding |
+| **17** | `test_v2_distributed_scaling.py` | Elastic Scaling & Concurrency | Scalable parallel workload distribution across $N \ge 10$ nodes |
+| **18** | `test_v2_immutable_audit.py` | Cryptographic Immutable Audit Trail | Tamper-proof blockchain ledger with HMAC/SHA-256 verification |
 
 ---
 
