@@ -2,10 +2,16 @@
 
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Python: 3.11+](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://python.org)
-[![Version: v2.0](https://img.shields.io/badge/Version-v2.0-blue.svg)](https://github.com/benzjeremy/agi-research/releases/tag/v2.0)
+[![Version: v2.0](https://img.shields.io/badge/Version-v2.0%20[Pre--Release]-blue.svg)](https://github.com/benzjeremy/agi-research/releases/tag/v2.0)
+[![Status: Pre-Release](https://img.shields.io/badge/Status-Pre--Release%20%2F%20Research%20WIP-orange.svg)](https://github.com/benzjeremy/agi-research)
 [![Benchmarks: 18/18 Passed](https://img.shields.io/badge/Benchmarks-18%2F18%20Passed-success)](#-the-18-empirical-benchmarks)
 [![Website](https://img.shields.io/badge/Website-Live%20Showcase-purple)](https://benzjeremy.github.io/agi-research/)
 [![Architecture](https://img.shields.io/badge/Architecture-Distributed%20%26%20Multi--Modal%20SEAN-orange)](#-architecture-self-evolving-agent-network-sean)
+
+> [!IMPORTANT]
+> ### 🚧 Pre-Release / Active Development Notice
+> **This research suite and software framework is not yet final and is under active research and development.**  
+> All releases, benchmarks, and agent definitions are **Pre-Releases** (Work in Progress), even if tagged under major version markers like v2.0. Dynamic updates, benchmark expansions, and consensus tuning are actively continuing.
 
 > **Empirical Benchmark Suite & Theoretical Framework for Functional Artificial General Intelligence (F-AGI) via Self-Evolving Agent Networks (SEAN) v2.0.**  
 > *Author: Jeremy Benz ([@benzjeremy](https://github.com/benzjeremy)) · Published: September 2026*
